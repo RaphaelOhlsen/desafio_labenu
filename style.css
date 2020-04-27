@@ -1,0 +1,290 @@
+* {
+  font-family: 'Roboto';
+  color: #FBF4EF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #CD4E1E;
+  display: flex;
+}
+
+header h3 {
+  font-weight: 700;
+  font-size: 32px;
+  padding: 15px 0;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+main {
+  padding-top: 50px;
+  background-color: #595F96;
+}
+
+main #wellcome {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: rgb(115, 118, 149);
+  width: 340px;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+main #wellcome.show {
+  display: block;
+}
+
+main #wellcome p {
+  text-align: center;
+}
+
+main #wellcome p:nth-child(1) {
+  font-size: 32px;
+  margin-bottom: 10px;
+  
+}
+main .brand {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto 20px;
+}
+
+main .brand img {
+  width: 100%;
+}
+
+
+section {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  width: 240px;
+  padding: 20px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 200ms;
+}
+
+.box:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.box.red {
+  background-color: #E06666
+}
+
+.box.green {
+  background-color: #94C47D;
+}
+
+.box.blue {
+  background-color: #6C9EEB;
+}
+
+.botton-text {
+  display: flex;
+  justify-content: flex-end;
+  margin: 100px 30px 0 0;
+  padding-bottom: 10px;
+}
+
+.botton-text div {
+  font-weight: 700;
+  font-size: 30px;
+  font-style: italic;
+}
+
+footer {
+  background-color: #D3D3D3;
+  padding: 40px 0;
+}
+
+footer > div {
+  text-align: center;
+}
+
+footer input[type="email"] {
+  font-size: 18px;
+  font-weight: 700;
+  width: 380px;
+  padding: 11px;
+  color: #999;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: none;
+}
+
+footer #button {
+  display: inline-block;
+  background-color: #CD4E1E;
+  color: #eee;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px;
+  transition: background-color 200ms;
+}
+
+footer #button:hover {
+  background-color: #ff6026;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 819px) {
+  header p {
+    font-size: 24px;
+  }
+
+  main .brand {
+    height: 240px;
+    width: 240px;
+  }
+
+  .box {
+    width: 190px;
+  }
+
+  .text {
+    font-size: 36px;
+  }
+
+  section {  
+    max-width: 640px;
+  }
+
+  .botton-text div{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  header p {
+    font-size: 20px;
+  }
+
+  main .brand {
+    height: 240px;
+    width: 240px;
+  }
+
+  section {  
+    max-width: 510px;
+  }
+
+  .box {
+    width: 150px;
+  }
+
+  .text {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+
+  .botton-text div{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 509px) {
+  header p {
+    font-size: 20px;
+  }
+
+  main .brand {
+    height: 190px;
+    width: 190px;
+  }
+
+  section {  
+    max-width: 400px;
+  }
+
+  .box {
+    width: 120px;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+
+  .botton-text div{
+    font-size: 16px;
+  }
+
+  footer input[type="email"] {
+    
+    width: 280px;
+    
+  }
+}
+
+@media screen and (max-width: 409px) {
+  header p {
+    font-size: 20px;
+  }
+
+  main {
+    padding-top: 30px;
+  }
+
+  main .brand {
+    height: 190px;
+    width: 190px;
+  }
+
+  section {  
+    max-width: 350px;
+  }
+
+  .box {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .botton-text {
+    margin-top: 55px;
+  }
+
+  .botton-text div{
+    font-size: 16px;
+  }
+
+  footer input[type="email"] {
+    
+    width: 180px;
+    
+  }
+}
